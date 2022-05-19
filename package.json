@@ -1,0 +1,8 @@
+{
+  "name": "ReactTsBase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JuHyerin/ReactTsBase.git",
+  "author": "JuHyerin <jhr67370719@gmail.com>",
+  "license": "MIT"
+}
