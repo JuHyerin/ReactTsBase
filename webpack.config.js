@@ -2,12 +2,14 @@ var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    mode: 'none',
+    mode: 'development',
 
     entry: './src/index.tsx',
 
+
     resolve: {
-        modules: [path.resolve(__dirname, 'src'), 'node_modules']
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],     /* ts|tsx 파일 import 가능 */
     },
 
     output: {
@@ -27,5 +29,14 @@ module.exports = {
     devServer: {
         port: 9000,
         open: true,
+    },
+
+    /*
+    * Webpack 은 오직 Javascript 와 Json 만 이해
+    * ts나 css는 loader를 사용하여 처리 가능한 모듈로 변환*/
+    module: {
+        rules: [
+            { test: /\.(ts|tsx)$/, use: 'ts-loader' },
+        ]
     }
 }
