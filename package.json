@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/JuHyerin/ReactTsBase.git",
   "author": "JuHyerin <jhr67370719@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
 }
