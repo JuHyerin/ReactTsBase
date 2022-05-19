@@ -6,7 +6,8 @@
   "author": "JuHyerin <jhr67370719@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "build": "webpack"
   },
   "dependencies": {
     "react": "^18.1.0",
