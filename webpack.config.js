@@ -10,6 +10,10 @@ module.exports = {
     resolve: {
         modules: [path.resolve(__dirname, 'src'), 'node_modules'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],     /* ts|tsx 파일 import 가능 */
+        alias: {
+            "@": path.resolve(__dirname, 'src'),
+            "@components": path.resolve(__dirname, 'src/components'),
+        }
     },
 
     output: {
