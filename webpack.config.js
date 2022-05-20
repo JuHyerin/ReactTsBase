@@ -31,8 +31,11 @@ module.exports = {
 
     /* https://webpack.kr/configuration/dev-server/ */
     devServer: {
-        port: 9000,
+        port: 9001,
         open: true,
+        historyApiFallback: {
+            rewrites: [{ from: /.*/g, to: '/index.html' }],     /* 주소창 route path 입력으로도 라우팅 되도록 설정 */
+        },
     },
 
     /*
